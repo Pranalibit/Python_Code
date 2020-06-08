@@ -1,0 +1,9 @@
+n = int(input('Give first number to check whether it is prime in that range: '))
+j = int(input('Give second one: '))
+for i in range(n,j+1):
+    for k in range(n,i):
+        if i % k == 0:
+            print('{} = {}*{}'.format(i,k,(i//k)))
+            break
+    else:
+        print('{} is prime number'.format(i))
