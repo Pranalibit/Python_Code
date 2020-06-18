@@ -1,0 +1,11 @@
+T = int(input())
+res = 0
+for i in range(0,T):
+    N,K=map(int, input().split())
+    P = list(map(int, input().split()))
+    for n in range(0,len(P)):
+        if P[n] > int(K):
+            difference = P[n] - int(K)
+            res = res + difference
+    print(res)
+    res = 0
